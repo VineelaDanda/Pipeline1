@@ -1,0 +1,15 @@
+{
+	"name": "ls_dls_dev",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://devdls.dfs.core.windows.net/",
+			"tenant": "9064abca-f936-4298-8e16-bf5357ab8c88",
+			"servicePrincipalId": "ade0f89a-b9f3-45dc-a827-181ca2c88300",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDkyNDAyMTc1LUZGMDEtNERCNi04OTlGLTkxNUVDRkIyRDk5Q182OWU0OTY2MS1jMTExLTRmMTktOGVjZS03N2U2MGMyOThhZmEiDQp9"
+		}
+	}
+}
