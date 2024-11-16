@@ -1,0 +1,9 @@
+{
+	"name": "DvrQaADF",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6eadd113-f64b-4e20-9bb4-80b5f91e5af8",
+		"tenantId": "9064abca-f936-4298-8e16-bf5357ab8c88"
+	}
+}
