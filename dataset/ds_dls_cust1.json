@@ -1,0 +1,39 @@
+{
+	"name": "ds_dls_cust1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_dls1_dev",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"storage_account1": {
+					"value": "@dataset().storage_account1",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"storage_account1": {
+				"type": "string"
+			},
+			"container1": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": {
+					"value": "@dataset().container1",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
