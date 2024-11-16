@@ -52,12 +52,18 @@
 						"referenceName": "ds_dls_customers",
 						"type": "DatasetReference",
 						"parameters": {
-							"storage_account": "https://devdls.dfs.core.windows.net/",
+							"storage_account": {
+								"value": "@pipeline().parameters.sourceaccount",
+								"type": "Expression"
+							},
 							"container": {
 								"value": "@pipeline().parameters.SourceContainer",
 								"type": "Expression"
 							},
-							"filename": "customers (1).csv"
+							"filename": {
+								"value": "@pipeline().parameters.sourcefilename",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -87,6 +93,12 @@
 				"type": "string"
 			},
 			"targetaccount": {
+				"type": "string"
+			},
+			"sourceaccount": {
+				"type": "string"
+			},
+			"sourcefilename": {
 				"type": "string"
 			}
 		},
